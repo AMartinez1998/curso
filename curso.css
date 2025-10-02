@@ -1,0 +1,69 @@
+ body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    padding: 2rem;
+    line-height: 1.6;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  /* --- MÓDULOS --- */
+  .modulo {
+    background: #fff;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+
+  .modulo-header {
+    background: #0077cc;
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  .modulo-header:hover {
+    background: #005fa3;
+  }
+  .clases {
+    display: none;
+    background: #f9f9f9;
+    padding: 1rem;
+  }
+  .active + .clases {
+    display: block;
+  }
+
+  /* --- CLASES --- */
+  .clase {
+    background: #fff;
+    margin-bottom: 0.7rem;
+    padding: 0.7rem 1rem;
+    border-left: 4px solid #0077cc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .clase:hover {
+    background: #eef6ff;
+  }
+  .contenido {
+    display: none;
+    padding: 1rem;
+    background: #eef6ff;
+    margin: 0.5rem 0 1rem 1rem;
+    border-radius: 6px;
+  }
+  .clase.active + .contenido {
+    display: block;
+  }
+
+  iframe, audio {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
